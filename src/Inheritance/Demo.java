@@ -4,7 +4,7 @@ public class Demo {
 
 	public static void main(String[] args) {
 		//parent object
-	//	Animal a = new Animal();
+		//Animal a = new Animal();
 //		a.printName();
 //		a.printAge();
 		
