@@ -2,20 +2,39 @@ package Inheritance;
 
 //Parent
 public class Animal {
-	
-	public Animal() {
-		System.out.println("In Animal contructor - parent");
-	}
 
+	int a = 12;
 	
-	//methods
-	public void printName() {
-		System.out.println("Name of Animal");
-		
-	}
+	int d = 89;
 	
-	public void printAge() {
-		System.out.println("Age of Animal");
-	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+//	public Animal() {
+//		System.out.println("In Animal contructor - parent");
+//	}
+//
+//	
+//	//methods
+//	public void printName() {
+//		System.out.println("Name of Animal");
+//		
+//	}
+//	
+//	public void printAge() {
+//		System.out.println("Age of Animal");
+//	}
 
 }
