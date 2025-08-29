@@ -2,8 +2,6 @@ package InheritanceTwo;
 
 public class Developer extends Employee {
 
-	
-	
 	public Developer() {
 		super();
 		System.out.println("Const - Develoepr");
@@ -13,6 +11,7 @@ public class Developer extends Employee {
 	int age = 23;
 
 	int empId = 110;
+	
 
 	@Override
 	public void printCity() {
