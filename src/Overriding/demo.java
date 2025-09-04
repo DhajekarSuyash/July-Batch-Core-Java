@@ -8,6 +8,7 @@ public class demo {
 		
 		Lion l = new Lion();
 		//l.something();
+		l.printColor();
 		
 	}
 

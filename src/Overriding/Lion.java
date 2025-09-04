@@ -8,6 +8,7 @@ public class Lion extends Animal
 	}
 	
 	public Lion(int a) {
+		super();
 		System.out.println("a in constructor is : " + a);
 		
 	}
@@ -16,6 +17,11 @@ public class Lion extends Animal
 	
 	public void printColor() {
 		System.out.println("Yello black stripped");
+		printCity();
+		super.printCity();
+		super.printName();
+		System.out.println(super.age);
+		
 	}
 	
 	public void something() {
@@ -23,6 +29,7 @@ public class Lion extends Animal
 		System.out.println(this.number);
 		this.printColor();
 		this.printName();
+		
 		
 	}
 	
