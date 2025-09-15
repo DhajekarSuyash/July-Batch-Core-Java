@@ -8,19 +8,27 @@ public class Demo4 {
 	
 	public static void main(String[] args) throws ArithmeticException
 	{
-		Demo4 d = new Demo4();
-	
-		d.div();
-		System.out.println("END");
+		
+		int a=50000;
 		
 		
+		 int square = a*a;
+		 System.out.println(square);	
 		
 	}
-	
-	public void div() throws ArithmeticException
-	{
-		int a = 12/0;
-	}
+//		Demo4 d = new Demo4();
+//	
+//		d.div();
+//		System.out.println("END");
+//		
+//		
+//		
+//	}
+//	
+//	public void div() throws ArithmeticException
+//	{
+//		int a = 12/0;
+//	}
 	
 	
 	
