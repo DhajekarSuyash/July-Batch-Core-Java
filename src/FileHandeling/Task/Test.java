@@ -19,7 +19,7 @@ public class Test {
 
 		while (count <= noOfStudent) {
 			Test t = new Test();
-			// create student from user
+			// create student from user input
 			Student student = t.getStudentObjectFromUser();
 			try {
 				// add student to file
@@ -56,6 +56,7 @@ public class Test {
 		// Note - phoneNumber casted to BigInt as write do not allow long.
 		BigInteger phoneNumber = BigInteger.valueOf(student.getPhoneNumber());
 		writer.write(phoneNumber + " : ");
+		
 		writer.write(student.getCity() + ";" + System.lineSeparator());
 
 		String msg = "Student : " + student.getfName() + " : updated in file : " + fileName;
