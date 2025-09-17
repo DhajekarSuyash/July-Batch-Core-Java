@@ -7,18 +7,32 @@ import java.math.BigInteger;
 import java.util.Scanner;
 
 public class Test {
+	
+	static Scanner sc = new Scanner(System.in);
 
 	public static void main(String[] args) {
-		Test t = new Test();
-		// create student from user
-		Student student = t.getStudentObjectFromUser();
-		try {
-			// add student to file
-			String msg = t.updateFile(student);
-			System.out.println(msg);
-		} catch (IOException e) {
-			e.printStackTrace();
+		
+		System.out.println("Welcome to student portal***");
+		System.out.println("Please enter number of student you want to add : ");
+		int noOfStudent = sc.nextInt();
+		int count = 1;
+
+		while (count <= noOfStudent) {
+			Test t = new Test();
+			// create student from user
+			Student student = t.getStudentObjectFromUser();
+			try {
+				// add student to file
+				String msg = t.updateFile(student);
+				System.out.println(msg);
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+			count++;
 		}
+		System.out.println("Total student added in file : " + (count-1));
+		sc.close();
+		
 
 	}
 
@@ -38,8 +52,8 @@ public class Test {
 		writer.write(student.getId() + " : ");
 		writer.write(student.getfName() + " : ");
 		writer.write(student.getlName() + " : ");
-		
-		//Note - phoneNumber casted to BigInt as write do not allow long.
+
+		// Note - phoneNumber casted to BigInt as write do not allow long.
 		BigInteger phoneNumber = BigInteger.valueOf(student.getPhoneNumber());
 		writer.write(phoneNumber + " : ");
 		writer.write(student.getCity() + ";" + System.lineSeparator());
@@ -53,7 +67,6 @@ public class Test {
 	}
 
 	private Student getStudentObjectFromUser() {
-		Scanner sc = new Scanner(System.in);
 		System.out.println("Please provide following details");
 
 		System.out.println("Please enter Id : ");
@@ -73,7 +86,6 @@ public class Test {
 
 		Student student = constructStudentObject(id, fName, lastName, phoneNumber, city);
 
-		sc.close();
 		return student;
 	}
 
