@@ -7,7 +7,9 @@ public class Test1 {
 	
 	public static void main(String[] args) {
 		
-	Predicate<Integer> p = x -> x % 2 ==0;
+	Predicate<Integer> p = (x) ->{ 
+		return x % 2 ==0;	
+	};
 	Boolean result = p.test(25);
 	System.out.println(result);
 	

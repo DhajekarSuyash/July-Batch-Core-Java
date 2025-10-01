@@ -2,6 +2,7 @@ package PreDefinedFunctionalInterface;
 
 import java.util.function.Function;
 
+//Function interface
 public class Test2 {
 	public static void main(String[] args) {
 
