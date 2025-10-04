@@ -18,7 +18,7 @@ public class Test5 {
 		
 		Supplier<Integer> supplier = () -> 10;
 		
-		//if number us even then sqaure it and print it
+		//if number is even then sqaure it and print it
 		
 		if(predicate.test(supplier.get())) {
 			consumer.accept(function.apply(supplier.get()));
