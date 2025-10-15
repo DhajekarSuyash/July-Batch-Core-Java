@@ -9,7 +9,7 @@ public class Test2 {
 
 		e.start();
 
-		for (int i = 0; i < 5; i++) {
+		for (int i = 0; i < 500; i++) {
 			System.out.println("Main method : " + Thread.currentThread().getName());
 		}
 
