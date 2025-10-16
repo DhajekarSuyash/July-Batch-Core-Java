@@ -1,0 +1,8 @@
+
+1. run() -> overriden method to write a thread logic
+2. start() -> to start the thread
+3. sleep(int milllis) -> it pauses the thread at a defined duration
+4. join() -> asks another thread to wait till task is finished
+5. isAlive() -> checks if thread is live or not 
+6. getName() -> returns thread name
+7. setName(String name) -> sets thread name 

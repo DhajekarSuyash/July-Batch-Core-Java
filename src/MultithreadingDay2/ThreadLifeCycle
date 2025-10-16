@@ -1,0 +1,9 @@
+1. NEW -> Thread is created but not started
+
+2. RUNNABLE -> When we initiate or execute start method.
+
+3. RUNNING -> Duration when thread is actually executing.
+
+4. BLOCKED/WAITING -> if thread is paused for some duration
+
+5. TERMINATED -> Thread has completed execution.
